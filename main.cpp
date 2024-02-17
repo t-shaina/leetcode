@@ -7,7 +7,11 @@
 //#include "letter_combinations_of_a_string_number.h
 //#include "swap_nodes_in_pairs.h"
 //#include "divide_two_integers.h"
-#include "next_permutation.h"
+//#include "next_permutation.h"
+//#include "find_first_and_last_position_of_element_in_sorted_array.h"
+//#include "valid_sudoku.h"
+//#include "count_and_say.h"
+#include "combination_sum.h"
 
 int main(int argc, char *argv[])
 {
@@ -27,11 +31,15 @@ int main(int argc, char *argv[])
         head = head->next;
 
     }*/
-    std::vector v = {1,1,5};
-    s.nextPermutation(v);
-    for (auto i = v.begin(); i != v.end(); ++i){
-        std::cout << *i ;
+
+    std::vector<int> v ({2,3,5});
+    std::vector<vector<int>> rez = s.combinationSum(v, 8);
+    for (auto i = rez.begin(); i != rez.end(); ++i){
+        for (auto j = i->begin(); j != i->end(); j++)
+            std::cout << *j;
+        std::cout << endl;
     }
-    std::cout << std::endl;
+
+    std::cout <<  std::endl;
     return 0;
 }
