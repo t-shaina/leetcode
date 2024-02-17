@@ -11,7 +11,8 @@
 //#include "find_first_and_last_position_of_element_in_sorted_array.h"
 //#include "valid_sudoku.h"
 //#include "count_and_say.h"
-#include "combination_sum.h"
+//#include "combination_sum.h"
+#include "combination_sum_two.h"
 
 int main(int argc, char *argv[])
 {
@@ -32,8 +33,8 @@ int main(int argc, char *argv[])
 
     }*/
 
-    std::vector<int> v ({2,3,5});
-    std::vector<vector<int>> rez = s.combinationSum(v, 8);
+    std::vector<int> v ({2,5,2,1,2});
+    std::vector<vector<int>> rez = s.combinationSum2(v, 5);
     for (auto i = rez.begin(); i != rez.end(); ++i){
         for (auto j = i->begin(); j != i->end(); j++)
             std::cout << *j;
