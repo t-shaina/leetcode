@@ -15,7 +15,8 @@
 //#include "combination_sum_two.h"
 //#include "multiply_strings.h"
 //#include "jump_game_two.h"
-#include "minimum_moves_to_capture_the_queen.h"
+//#include "minimum_moves_to_capture_the_queen.h"
+#include "maximum_square_area_by_removing_fences_from_a_field.h"
 
 int main(int argc, char *argv[])
 {
@@ -39,7 +40,8 @@ int main(int argc, char *argv[])
     //std::vector<int> v ({5,6,4,4,6,9,4,4,7,4,4,8,2,6,8,1,5,9,6,5,2,7,9,7,9,6,9,4,1,6,8,8,4,4,2,0,3,8,5});
 
     //std::vector<vector<int>> rez = s.multiply(num1, num2)
-
-    std::cout << "rez is "<< s.minMovesToCaptureTheQueen(1,8,7,2,6,1)<<  std::endl;
+    std::vector<int> h {2,3};
+    std::vector<int> v {2};
+    std::cout << "rez is "<< s.maximizeSquareArea(4, 3, h, v)<<  std::endl;
     return 0;
 }
