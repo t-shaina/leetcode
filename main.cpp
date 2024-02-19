@@ -13,7 +13,9 @@
 //#include "count_and_say.h"
 //#include "combination_sum.h"
 //#include "combination_sum_two.h"
-#include "multiply_strings.h"
+//#include "multiply_strings.h"
+//#include "jump_game_two.h"
+#include "minimum_moves_to_capture_the_queen.h"
 
 int main(int argc, char *argv[])
 {
@@ -34,11 +36,10 @@ int main(int argc, char *argv[])
 
     }*/
 
-    std::vector<int> v ({10,1,2,7,6,1,5});
-    std::string num1 = "123";
-    std::string num2 = "456";
+    //std::vector<int> v ({5,6,4,4,6,9,4,4,7,4,4,8,2,6,8,1,5,9,6,5,2,7,9,7,9,6,9,4,1,6,8,8,4,4,2,0,3,8,5});
+
     //std::vector<vector<int>> rez = s.multiply(num1, num2)
 
-    std::cout << "rez is "<< s.multiply(num1, num2)<<  std::endl;
+    std::cout << "rez is "<< s.minMovesToCaptureTheQueen(1,8,7,2,6,1)<<  std::endl;
     return 0;
 }
